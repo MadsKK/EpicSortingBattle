@@ -3,11 +3,14 @@ def insertionSort(liste):
     sortedList = []
     indexList = []
     for x in range(len(liste)):
-        indexList += x
-        for n in indexList[-x]:
+        print("x1: " + str(x))
+        indexList += [x]
+        for n in range(indexList[-1]):
+            print("x2: " + str(x))
+            print("n: " + str(n))
             if x < n:
 
-        sortedList += [liste[x]]
+                sortedList += [liste[x]]
 
     return sortedList
 
