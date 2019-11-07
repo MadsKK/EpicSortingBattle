@@ -1,7 +1,7 @@
 
-def insertionSort(list):
-
-    return sortedList
+def insertionSort(liste):
+    for x in range(len(liste)):
+        print(x)
 
 
 def selectionSort():
@@ -14,3 +14,8 @@ def bubbleSort():
 
 def mergeSort():
     pass
+
+
+if __name__ == "__main__":
+
+    insertionSort("fkdofksod")
