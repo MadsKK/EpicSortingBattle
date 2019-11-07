@@ -1,7 +1,15 @@
 
 def insertionSort(liste):
+    sortedList = []
+    indexList = []
     for x in range(len(liste)):
-        print(x)
+        indexList += x
+        for n in indexList[-x]:
+            if x < n:
+
+        sortedList += [liste[x]]
+
+    return sortedList
 
 
 def selectionSort():
@@ -18,4 +26,4 @@ def mergeSort():
 
 if __name__ == "__main__":
 
-    insertionSort("fkdofksod")
+    print(insertionSort(['agftd', 'ckfdfo', 'bkeoksess']))
