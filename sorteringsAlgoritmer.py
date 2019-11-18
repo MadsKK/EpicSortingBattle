@@ -12,12 +12,19 @@ def insertionSort(liste):
     return liste
 
 
-def selectionSort():
+def selectionSort(liste):
     pass
 
 
-def bubbleSort():
-    pass
+def bubbleSort(liste):
+    for i in range(1, len(liste)):
+        for l in range(1, len(liste)-1):
+            if(liste[l] > liste[l+1]):
+                temp = liste[l+1]
+                liste[l+1] = liste[l]
+                liste[l] = temp
+
+    return liste
 
 
 def mergeSort():
@@ -26,5 +33,7 @@ def mergeSort():
 
 if __name__ == "__main__":
 
-    print(insertionSort(['agftd', 'ckfdfo', 'bkeoksess',
+    # print(insertionSort(['agftd', 'ckfdfo', 'bkeoksess',
+    #                     'fsdfsdofksdofds', 'lokesomses', 'zsfkdo', 'pfe']))
+    print(selectionSort(['agftd', 'ckfdfo', 'bkeoksess',
                          'fsdfsdofksdofds', 'lokesomses', 'zsfkdo', 'pfe']))
