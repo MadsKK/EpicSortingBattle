@@ -29,7 +29,7 @@ def bubbleSort(liste1):
 
     # Første for loop som holder styr på alle elementerne
     for i in range(1, len(liste)):
-        # Anden for loop som laver en bubble omkring 2 elementer og tjekker dem
+        # Anden for loop som laver en bubble omkring 2 elementer
         for l in range(1, len(liste)-1):
             # Ser om det element man er nået til er større end det næste element
             if(liste[l] > liste[l+1]):
