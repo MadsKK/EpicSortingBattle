@@ -28,9 +28,9 @@ def bubbleSort(liste1):
     liste = liste1.copy()
 
     # Første for loop som holder styr på alle elementerne
-    for i in range(1, len(liste)):
+    for i in range(len(liste)):
         # Anden for loop som laver en bubble omkring 2 elementer
-        for l in range(1, len(liste)-1):
+        for l in range(len(liste)-1):
             # Ser om det element man er nået til er større end det næste element
             if(liste[l] > liste[l+1]):
                 # Bytter om på de 2 elementer
@@ -47,8 +47,7 @@ def mergeSort():
 
 if __name__ == "__main__":
 
-    test = ['agftd', 'ckfdfo', 'bkeoksess',
-            'fsdfsdofksdofds', 'lokesomses', 'zsfkdo', 'pfe']
+    test = [9, 4, 6, 2, 5]
     # print(insertionSort(test))
     # print(selectionSort(test))
     print(bubbleSort(test))
